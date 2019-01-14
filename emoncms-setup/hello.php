@@ -205,14 +205,14 @@ wifi_scan();
 $("#setup-standalone").click(function(){
     $("#setup-step1").hide();
     $.ajax({type: 'POST', url: path+"setup/setwifi?mode=standalone", dataType: 'text', async: true, success: function(result) {
-        window.location = path+"user/login";   
+        window.location = "/";   
     }});
 });
 
 $("#setup-ethernet").click(function(){
     $("#setup-step1").hide();
     $.ajax({type: 'POST', url: path+"setup/setwifi?mode=ethernet", dataType: 'text', async: true, success: function(result) {
-        window.location = path+"user/login";   
+        window.location = "/";    
     }});
 });
 
